@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+    position: relative;
+    width:1518px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    background-size: cover;
+    background-image:url(img/image\ 1\ \(6\).png);
+}
+.logo{
+    width:90px;
+    height: 110px;
+    padding-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.lich{
+    float:right;
+    margin: 20px 15px 0 0;
+}
+.login{
+    width: 52px;
+    height: 50px;
+}
+
+.txt{  
+    width: 100%;
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+.ul{
+    position: absolute;
+    right: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.link{
+    font-size: 22px;
+    text-decoration: none;
+    color:white;
+    transition: color 0.2s linear;
+}
+.link:hover{
+    color:red;  
+}
+.header-centxt{
+    font-family: 'Jacques Francois Shadow', serif;
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tinos', serif;
+    gap:40px;
+    width:40%;
+    color:white;
+    text-align: center;
+    margin-left: 490px;  
+    margin-top: 170px;  
+    display: flex; 
+    justify-content: center; 
+}
+.left-txt{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+
+}
+.A{
+color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 78px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.K{
+    color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 72px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.T{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.S{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.U{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.right-txt{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+} 
+.right-txt p:first-child{
+    color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}   
+.I{
+    color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 90px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.C{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.H{
+    color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.E{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 66px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.N{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.txt_sup{
+    font-family: 'Jost', sans-serif;
+font-family: 'Noto Sans NKo Unjoined', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tinos', serif;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 130px;
+    margin-right:70px ;
+}
+.bottom_text{
+    height: 60px;
+    width: 200px;
+    display: flex;  
+    justify-content: center;  
+    color: white;
+    font-size: 48px;
+    font-family: Jost;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}

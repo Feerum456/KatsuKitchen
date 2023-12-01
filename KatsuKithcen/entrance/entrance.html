@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katsu Kitchen-Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/тарелки2.png">
+</head>
+<body background="img/image1.png" >
+<div class="container">
+    <div class="wrapper">
+        <div class="header">
+            <img class="logo" src="img/тарелки.png" alt="">
+                <div class="txt">
+                    <ul class="ul"> 
+                        <li class="txt1"><a class="link" href="../index.html">Главная</a></li>
+                        <li class="txt1"><a class="link" href="../menu/index.html">Меню</a></li>
+                        <li class="txt1"><a class="link" href="../address/address.html">Адрес</a></li>
+                        <li class="txt1"><a class="link" href="../make a reservation/index.html">Отзывы</a></li>
+                        <li class="txt1"><a class="link" href="../registration/registration.html">Войти/Зарегистрироваться</a></li>
+                        <div class="lich">
+                            <a href="../personal account/personal account.html">
+                                <img class="login" src="img/иконка.png" alt="">
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="entrance">
+        <div class="form_reg">
+            <div class="reg">
+                <u><p>Вход</p></u>
+            </div>
+            <form class="form_input" action="">
+                <div class="input_txt">
+                    <h3>ФИО</h3>
+                    <input type="text" name="fio" id="fio" placeholder="ФИО">
+                    <h3>Электронная почта</h3>
+                    <input type="email" name=email" id="email" placeholder="Email">
+                    <h3>Пароль</h3>
+                    <input type="password" name="password" id="password-input" placeholder="Password">
+                    <a href="../registration/registration.html"><u><h4>Нет аккаунта? Регистрация</h4></u></a>
+                </div>
+                    <div class="submit_btn">
+                        <button type="submit" class="submit" name="subbutton" value="value">ВОЙТИ</button>
+                    </div>
+                </form>  
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <div class="clock">
+            <h4>Часы работы</h4>
+            <h4>9.00-23.00</h4>
+        </div>
+        <div class="footer-img">
+            <img src="img/25684.png" alt="" class="img">
+            <img src="img/25684.png" alt="" class="img">
+            <img src="img/25684.png" alt="" class="img">
+        </div>
+    </div>
+<script>
+        const bodu = document.body;
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+			bodu.classList.toggle("noscroll");
+            document.querySelector('.txt').classList.toggle('open');
+        })
+</script>
+</body>
+</html>

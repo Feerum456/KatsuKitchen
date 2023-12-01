@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+body.noscroll{
+    overflow: hidden;
+}
+.container{
+    max-width: 1520px;
+    margin: 0 auto;
+}
+.open{
+    display: flex !important;
+}
+.wrapper{
+    flex-grow: 1;
+    flex: 1;
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.back{
+    width:100%;
+    height: 800px;
+    background-size: cover;
+    background-image:url(img/Прямоугольник\ 1.png);
+}
+.logo{
+    width:90px;
+    height: 110px;
+    padding-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.lich{
+    margin-left: 10px;
+}
+.login{
+    width: 52px;
+    height: 50px;
+}
+
+.txt{  
+    width: 800px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.ul{
+    margin-top:40px ;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.link{
+    font-size: 24px;
+    text-decoration: none;
+    color:white;
+    transition: color 0.2s linear;
+}
+.link:hover{
+    color:red;  
+}
+.burger{
+    margin-top: 20px;
+    margin-right: 20px;
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45px;
+    height: 30px;
+}
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+}
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
+}
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+.burger.active span { transform: scale(0) }
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+.header-centxt{
+    font-family: 'Jacques Francois Shadow', serif;
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tinos', serif;
+    width:60%;
+    color:white;
+    text-align: center;
+    margin: 180px auto;
+    display: flex; 
+    justify-content: center; 
+}
+.left-txt{
+    margin-right:20px ;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+
+}
+.A{
+color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 78px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.K{
+    
+    color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 72px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.T{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.S{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.U{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.right-txt{
+    margin-left:20px ;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+} 
+.right-txt p:first-child{
+    color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}   
+.I{
+    color: #FFF;
+font-family: Jacques Francois Shadow;
+font-size: 90px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.C{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.H{
+    color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.E{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 66px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.N{color: #FFF;
+    font-family: Jacques Francois Shadow;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+.txt_sup{
+    font-family: 'Jost', sans-serif;
+font-family: 'Noto Sans NKo Unjoined', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tinos', serif;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 130px;
+    margin-right:70px ;
+}
+.bottom_text{
+    height: 60px;
+    width: 200px;
+    display: flex;  
+    justify-content: center;  
+    color: white;
+    font-size: 48px;
+    font-family: Jost;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}
+.map{
+    background-image: url(img/КК.png);
+    background-size: cover;
+    height: 900px;
+}
+.container-fluid{
+    width:80%;
+    height: 740px;
+}
+
+.one-contact-segment h4{
+    width:300px;
+    height: 40px;
+    color: black;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding-top: 80px; 
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-family: Jost;
+}
+.one-contact-segment a{ 
+    color: #000;
+    font-family: Jost;
+    width: 550px;
+    height: 68px;
+    margin-left: 100px;
+    padding-top: 10px;
+font-family: Jost;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+.one-contact-segment a:hover{
+    color:grey;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 190px;
+    width:100%;
+}
+.clock{
+    display: flex;
+width: 197px;
+height: 76px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Jost;
+font-size: 22px;
+font-style: normal;
+line-height: normal;
+}
+.footer-img{
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+}
+.img{
+    width: 33%;
+    height: 50px;
+}
+@media (max-width: 900px) {
+    .one-contact-segment h4{
+        font-size: 32px;
+        margin-left: 80px;
+    }
+    .one-contact-segment a{
+        font-size: 46px;
+        margin-left: 80px;
+    }
+    .bottom_text{
+        font-size: 36px;
+        margin-top: 220px;
+    }
+    .back{
+        height: 680px;
+    }
+    .txt_sup{
+        margin: 120px auto;
+        font-size: 20px;
+    }
+    .burger { display: flex }
+    .txt{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #948787;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .ul{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .lich{
+        margin-left: 0;
+    }
+    .K{
+        font-size: 42px;
+    }
+    .A{
+        font-size: 48px;
+    }
+    .T{
+        font-size: 56px;
+    }
+    .S{
+        font-size: 62px;
+    }
+    .U{
+        font-size: 70px;
+    }
+    .right-txt p:first-child{
+        font-size: 70px
+    }
+    .I{
+        font-size: 62px;
+    }
+    .C{
+        font-size: 48px;
+    }
+    .H{
+        font-size: 42px;
+    }
+    .E{
+        font-size: 34px;
+    }
+    .N{
+        font-size: 26px;
+    }
+}
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@media(max-width:590px){
+    .bottom_text{
+        font-size: 32px;
+        margin-top: 200px;
+    }
+    .header-centxt{
+        margin: 140px auto;
+    }
+    .back{
+        height: 580px;
+    }
+    .K{
+        font-size: 24px;
+    }
+    .A{
+        font-size: 30px;
+    }
+    .T{
+        font-size: 36px;
+    }
+    .S{
+        font-size: 42px;
+    }
+    .U{
+        font-size: 48px;
+    }
+    .right-txt p:first-child{
+        font-size: 48px
+    }
+    .I{
+        font-size: 42px;
+    }
+    .C{
+        font-size: 36px;
+    }
+    .H{
+        font-size: 30px;
+    }
+    .E{
+        font-size: 24px;
+    }
+    .N{
+        font-size: 18px;
+    }
+    .txt_sup{
+        margin: 90px auto;
+        font-size: 14px;
+    }
+}
+@media(max-width: 768px) {
+    .map{
+        height: 700px;
+    }
+    .one-contact-segment h4{
+        font-size: 22px;
+        margin-left: 30px;
+    }
+    .one-contact-segment a{
+        font-size: 36px;
+        margin-left: 30px;
+    }
+}
+@media(max-width: 468px){
+    .map{
+        height: 600px;
+    }
+    .one-contact-segment h4{
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .one-contact-segment a{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .bottom_text{
+        font-size: 24px;
+        margin-top: 140px;
+    }
+    .content{
+        font-size: 24px;
+    }
+    .back{
+        height: 480px;
+    }
+    .header-centxt{
+        margin: 140px auto;
+    }
+    .right-txt{
+        margin-left: 10px;
+    }
+    .left-txt{
+        margin-right: 10px;
+    }
+        .burger{
+            width: 30px;
+        height: 20px;
+    }
+
+    .logo{
+        width:60px;
+        height: 80px;
+    }
+    .clock{
+        width:140px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .footer-img{
+        margin-right: 5px;
+        width:140px;
+        gap:10px;
+        height: 40px;
+    }
+    .img{
+        width: 25%;
+        height: 40px;
+    }
+}
+@media(max-width:402px){
+    .map{
+        height: 600px;
+    }
+    .one-contact-segment h4{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .one-contact-segment a{
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    .bottom_text{
+        font-size: 20px;
+        margin-top: 140px;
+    }
+    .right-txt{
+        margin-left: 6px;
+    }
+    .left-txt{
+        margin-right: 6px;
+    }
+    .K{
+        font-size: 18px;
+    }
+    .A{
+        font-size: 20px;
+    }
+    .T{
+        font-size: 22px;
+    }
+    .S{
+        font-size: 24px;
+    }
+    .U{
+        font-size: 26px;
+    }
+    .right-txt p:first-child{
+        font-size: 26px
+    }
+    .I{
+        font-size: 24px;
+    }
+    .C{
+        font-size: 20px;
+    }
+    .H{
+        font-size: 18px;
+    }
+    .E{
+        font-size: 16px;
+    }
+    .N{
+        font-size: 14px;
+    }
+    .txt_sup{
+        margin: 50px auto;
+        font-size: 8px;
+    }
+    .back{
+        height: 440px;
+    }
+}

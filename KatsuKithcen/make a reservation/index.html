@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Katsu Kitchen-лучший азиатский ресторан!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/тарелки2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Noto+Sans+NKo+Unjoined:wght@500;600&family=Open+Sans:wght@400;500&family=Roboto:ital,wght@1,300&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Noto+Sans+NKo+Unjoined:wght@500;600&family=Open+Sans:wght@400;500&family=Roboto:ital,wght@1,300&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body background="img/ФОН.png">
+<div class="container">
+    <div class="back">
+        <div class="wrapper">
+            <div class="header">  
+                <img class="logo" src="img/тарелки.png" alt="">
+                    <div class="txt">
+                        <ul class="ul"> 
+                            <li class="txt1"><a class="link" href="../index.html">Главная</a></li>
+                            <li class="txt1"><a class="link" href="../menu/index.html">Меню</a></li>
+                            <li class="txt1"><a class="link" href="../address/address.html">Адрес</a></li>
+                            <li class="txt1"><a class="link" href="../make a reservation/index.html">Отзывы</a></li>
+                            <li class="txt1"><a class="link" href="../registration/registration.html">Войти/Зарегистрироваться</a></li>
+                            <div class="lich">
+                                <a href="../personal account/personal account.html">
+                                    <img class="login" src="img/иконка.png" alt="">
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-centxt">
+            <div class="left-txt">
+                <p class="K">K</p>
+                <p class="A">A</p>
+                <p class="T">T</p>
+                <p class="S">S</p>
+                <p class="U">U</p>
+            </div>
+            <div class="right-txt">
+                <p class="K">K</p>
+                <p class="I">I</p>
+                <p class="T">T</p>
+                <p class="C">C</p>
+                <p class="H">H</p>
+                <p class="E">E</p>
+                <p class="N">N</p>
+            </div>
+            <div class="txt_sup">
+                FRESH INGREDIENTS SOURCED GLOBALLY
+            </div>
+        </div>
+        <div class="bottom_text">
+            ОТЗЫВЫ
+          </div>
+    </div>
+    <center><h2>НАПИШИТЕ ВАШИ ВПЕЧАТЛЕНИЯ</h2></center>
+    <div class="form">
+        <div class="content">
+            <form class="reviews" method="post">
+                <div class="input_txt">
+                    <h3>ФИО</h3>
+                    <input type="text" name="fio" id="fio" placeholder="ФИО">
+                    <h3>Электронная почта</h3>
+                    <input type="email" name=email" id="email" placeholder="Email">
+                    <h3>Отзыв</h3>
+                    <input type="text" name="comment">
+                </div>
+                    <div class="submit_btn">
+                        <button type="submit" class="submit" name="subbutton" value="value">ОТПРАВИТЬ</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>  
+    <div class="footer">
+        <div class="clock">
+            <h4>Часы работы</h4>
+            <h4>9.00-23.00</h4>
+        </div>
+        <div class="footer-img">
+            <img src="img/25684.png" alt="" class="img">
+            <img src="img/25684.png" alt="" class="img">
+            <img src="img/25684.png" alt="" class="img">
+        </div>
+    </div>
+    <script>
+      const bodu = document.body;
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+			bodu.classList.toggle("noscroll");
+          document.querySelector('.txt').classList.toggle('open');
+      })
+</script>
+</body>
+</html>
